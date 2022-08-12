@@ -85,6 +85,76 @@ ul {
     }    
 }
 
+/* section */
+#section1 {
+    margin: 0px 0px 330px 0px;
+}
+
+
+
+body a:link {
+    color: black;
+    text-decoration: none;
+  }
+  body a:visited {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .content_wrapper{
+      height: 38vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 19vh;
+  }
+  
+  .content_wrapper2{
+      height: 0vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+  
+  .btn_about{
+    border: 0;
+    outline: 0;
+    width: 150px;
+    height: 50px;
+  
+    background-color: #c79288;
+    color: white;
+  }
+  
+  
+  
+  .text_box{
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .text {
+        font-size: 2.5rem;
+      }
+    
+    .blink {
+      animation: blink 0.5s infinite;
+      font-size: 2.5rem;
+    }
+    
+    @keyframes blink {
+      to {
+        opacity: 0;
+      }
+    }
+  
+    
+
+
+/* header */
 .header-area > .navbar > .navbar-brand {
     display: inline-block;
     position: absolute;
@@ -272,25 +342,81 @@ section {
 }
 
 
+
+
+
+/* SECTION CONTAINER */
+.section-container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
 /* ABOUT AREA */
 .about-area {
 	height: auto;
 	position: relative;
 }
 
+ .picture {
+	display: block;
+	text-align: center;
+	padding: 20px;
+}
+
 @media (min-width: 992px) {
-	.about-area > .picture {
+ .picture {
 		width: calc(40% - 40px);
 		display: inline-block;
-		display: block;
-    	margin: auto;
+        float: left;
 	}
 }
 
+
+
+ .picture > .name {
+	font-size: 25px;
+	text-align: center;
+	padding: 15px 0;
+}
+
+ .picture > .description {
+	font-size: 14px;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+@media (min-width: 992px) {
+ .textA {
+        padding: 22px 50px;
+	}
+}
+
+.about-area > .textA * {
+	font-size: 16px;
+    padding: 65px;
+}
+
+
+
+
+
+/* ABOUT AREA */
+.about-area {
+	height: auto;
+	position: relative;
+}
+
+
+
 .about-area > .picture > img {
-	max-width: 150px;
-    max-height: 300px;
 	border-radius: 15px;
+    width: 75%;
 }
 
 .about-area > .picture > .name {
@@ -304,10 +430,7 @@ section {
 	font-family: 'Noto Sans KR', sans-serif;
 }
 
-.about-area > .text {
-	display: block;
-	padding: 30px;
-}
+
 
 @media (min-width: 992px) {
 	.about-area > .text {
@@ -408,9 +531,7 @@ section {
   }
   
   
-  #highligt {
-      font-size: 120px;
-  }
+
   
   @media screen and (max-width: 900px) {
     .AboutMeQWER li div {
@@ -449,11 +570,12 @@ section {
   }
   
 .AboutMe {
-	display: -webkit-flex;
-	flex-flow: row wrap;
+    display: -webkit-flex;
+    flex-flow: row wrap;
     display: flex;
     justify-content: space-between;
     -webkit-box-pack: justify;
+    clear: both;
 }
 .AboutMe > .AboutMeInfo {
 	margin-bottom: 2rem;

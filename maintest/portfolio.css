@@ -1,0 +1,81 @@
+/* COMMON */
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+
+
+
+
+/* SECTION CONTAINER */
+.section-container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+/* ABOUT AREA */
+.about-area {
+	height: auto;
+	position: relative;
+}
+
+ .picture {
+	display: block;
+	text-align: center;
+	padding: 20px;
+}
+
+@media (min-width: 992px) {
+ .picture {
+		width: calc(40% - 40px);
+		display: inline-block;
+	}
+}
+
+ .picture > img {
+	max-width: 300px;
+	max-height: 300px;
+	border-radius: 15px;
+}
+
+ .picture > .name {
+	font-size: 25px;
+	text-align: center;
+	padding: 15px 0;
+}
+
+ .picture > .description {
+	font-size: 14px;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+ .text {
+	display: block;
+	padding: 30px;
+}
+
+@media (min-width: 992px) {
+ .text {
+		width: calc(60% - 100px);
+		display: inline-block;
+		padding: 0 50px;
+	}
+}
+
+.about-area > .text * {
+	font-size: 16px;
+}
+
+
+
+
+
+
