@@ -15,7 +15,9 @@ body {
     -moz-box-sizing: border-box;
     word-break: break-all;
     font-family: 'Heebo', sans-serif;
+    -ms-overflow-style:none;   
 }
+body::-webkit-scrollbar { display:none; }
 
  img {
     width: 100%;
@@ -276,13 +278,6 @@ section {
 	position: relative;
 }
 
-.about-area > .picture {
-	display: block;
-	text-align: center;
-	padding: 20px;
-    padding-bottom: 45px;
-}
-
 @media (min-width: 992px) {
 	.about-area > .picture {
 		width: calc(40% - 40px);
@@ -372,7 +367,87 @@ section {
 .about-area > .text > .sns > a:hover {
 	background-image: linear-gradient(to right, royalblue , aquamarine);
 }
+/* QWER */
 
+
+.AboutMeQWER {
+    padding: 50px 0;
+    background-color: #f9f9ff;
+  }
+  
+  
+  .AboutMeQWER li div {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+  }
+  
+  .AboutMeQWER li:nth-child(odd) div {
+      transform: translate3d(200px, 0, 0);
+    }
+    
+  .AboutMeQWER li:nth-child(even) div {
+      transform: translate3d(-200px, 0, 0);
+      text-align: right;
+    }
+  .AboutMeQWER li.show div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .AboutMeQWER > .AboutMeQWERLi > .AboutMeQWERContainer > .MainTitle{
+      color: black;
+      font-size: 70px;
+      font-family: cursive;
+      margin: 12px;
+  }
+  
+  .AboutMeQWER > .AboutMeQWERLi > .AboutMeQWERContainer > .AboutMeQWERContainerSub{
+      background-color: gray;
+  }
+  
+  
+  #highligt {
+      font-size: 120px;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .AboutMeQWER li div {
+      width: 250px;
+    }
+    .AboutMeQWER li:nth-child(even) div {
+      left: -289px;
+      /*250+45-6*/
+    }
+  }
+  
+  
+  .AboutMeQWERContainer {
+      text-align: center;
+  }
+  .AboutMeQWERContainer > .AboutMeQWERitem {
+      height: auto;
+      background-color: white;
+      margin: 20px;
+      padding: 20px;
+      text-align: left;
+      transition: all 0.5s ease;
+  }
+  .AboutMeQWERContainer > .AboutMeQWERitem:hover {
+      transform: scale(1.015);
+      box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  }
+  .AboutMeQWERContainer > .AboutMeQWERitem > .Title {
+      font-size: 32px;
+      font-weight: bold;
+      padding: 10px 0;
+  }
+  .AboutMeQWERContainer > .AboutMeQWERitem > .MainTitle {
+      padding: 10px 0;
+      display: inline-block;
+  }
+  
 .AboutMe {
 	display: -webkit-flex;
 	flex-flow: row wrap;
@@ -384,6 +459,7 @@ section {
 	margin-bottom: 2rem;
 	width: 33.3333%;
 }
+
 
 .AboutMe > .AboutMeInfo > .AboutMeWrapper {
 	display: -webkit-flex;
@@ -408,14 +484,26 @@ section {
     margin-right: 2rem;
 }
 
-.AboutMeLabel {
+.AboutMe > .AboutMeInfo > .AboutMeWrapper > .AboutMeField > .AboutMeLabel {
 	margin-bottom: 0.5rem;
     font-weight: 700;
     font-size: 1.25rem;
 }
-.AboutMevalue {
+.AboutMe > .AboutMeInfo > .AboutMeWrapper > .AboutMeField > .AboutMevalue {
 	font-weight: 400;
 	font-size: 1rem;
+}
+
+.AboutMe > .AboutMeInfo > .AboutMeWrapper > .AboutMeField > a {
+    text-transform: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.AboutMe > .AboutMeInfo > .AboutMeWrapper > .AboutMeField > a:hover {
+    color: #f4623a;
 }
 
 

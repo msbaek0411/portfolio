@@ -72,3 +72,4 @@ document.getElementById('navbarAbout').addEventListener('click', moveTo.bind(nul
 document.getElementById('navbarProjects').addEventListener('click', moveTo.bind(null,'Projects'));
 document.getElementById('navbarCareer').addEventListener('click', moveTo.bind(null,'Career'));
 document.getElementById('navbarReview').addEventListener('click', moveTo.bind(null,'review'));
+

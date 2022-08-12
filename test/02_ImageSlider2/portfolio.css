@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+
+
+body {
+    box-sizing: border-box;
+    /* 크롬, 사파리 */
+    -webkit-box-sizing: border-box;
+    /* 크롬 파이어폭스 */
+    -moz-box-sizing: border-box;
+
+    /* 줄바꿈 */
+    word-break: break-all;
+
+    /* 구글 폰트 */
+    font-family: 'Heebo', sans-serif;
+}
+
+img {
+    /* 가로 */
+    width: 100%;
+    /* 세로 */
+    height: 100%;
+}
+
+a {
+    /* 글씨의 선 색 지정*/
+    text-decoration: none;
+    font-size: 14px;
+
+    /* 모든 알파벳 대문자 */
+    text-transform: uppercase;
+}
+
+ul {
+    /* ul 앞에 점 없도록 */
+    list-style-type: none;
+}
+
+/* HEADER */
+.header-area {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: white;
+    /* 그림자효과 */
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-fade {
+    animation-name: navbar-fade;
+    /* 에니매이션 0.5초 */
+    animation-duration: 0.5s;
+    /* 웹킷에도 되도록 */
+    -webkit-animation-name: navbar-fade;
+    -webkit-animation-duration: 0.5s;
+}
+/* 애니메이션 효과(새로고침 시 투명도 */
+@keyframes navbar-fade {
+    /* 투명도 0.4 에서 1로 */
+    from { opacity: .4}
+    to { opacity: 1 }
+}
+
+@-webkit-keyframes navbar-fade {
+    from { opacity: .4}
+    to { opacity: 1 }
+}
+/* 동일한 태그에 2개 클래스 (.header-area, .navbar-fixed)*/
+.header-area.navbar-fixed {
+    position: fixed;
+}
+
+.header-area > .navbar {
+    width: calc(100% - 120px);
+    margin: 0 60px;
+    overflow: hidden;
+}
+
+
+/*브라우저 너비가 992 이상일때 실행*/
+@media (min-width: 992px){
+    .header-area > .navbar {
+        max-width: 900;
+        margin: 0 auto;
+    }
+}
+
+/*브라우저 너비가 1200px 이상일때 실행*/
+@media (min-width: 1200px){
+    .header-area > .navbar {
+        max-width: 1000;
+        margin: 0 auto;
+    }
+}
+
+/* logo */
+.header-area > .navbar > .navbar-brand {
+    display: inline-block;
+    
+    /*가운대 정렬*/
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    font-size: 32px;
+    cursor: pointer;
+}
+
+/* = */
+.header-area > .navbar > .navbar-toggler * {
+    font-size: 32px;
+}
+
+.header-area > .navbar > .navbar-toggler {
+    float: right;
+    height: 70px;
+    line-height: 70px;
+    font-size: 32px;
+    cursor: pointer;
+}
+/*창이 992 이상 일때만 보이도록*/
+@media(min-width: 992px) {
+    .header-area > .navbar > .navbar-toggler {
+        display: none;
+    }
+}
+
+
+/* menu 내용 */
+
+.header-area > .navbar > .navbar-menu {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: 0.5s ease;
+    overflow: hidden;
+}
+
+.header-area > .navbar > .navbar-menu.show {
+    height: 200px;
+}
+
+/* menu 내용 개개인 너비 */
+.header-area > .navbar > .navbar-menu > .nav-item {
+    float: none;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
+/* 확인  */
+.header-area > .navbar > .navbar-menu > .nav-item:hover * {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.header-area > .navbar > .navbar-menu > .nav-item > .nav-link {
+    display: block;
+    padding-left: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+/* 992 이상일때 */
+@media (min-width: 992px) {
+    .header-area > .navbar > .navbar-menu {
+        position: relative;
+        background-color: transparent;
+        float: right;
+        top: 0;
+        width: auto;
+        height: auto;
+        transition: none;
+    }
+
+    .header-area > .navbar > .navbar-menu.show {
+        height: auto;
+    }
+
+    /* 세로가 아닌 가로로 4개 */
+    .header-area > .navbar > .navbar-menu > .nav-item {
+        display: inline-block;
+        height: 70px;
+        line-height: 70px;
+    }
+
+    .header-area > .navbar > .navbar-menu > .nav-item:hover * {
+        /*마우스 반응 없도록 */
+        background-color: transparent;
+    }
+
+
+    .header-area > .navbar > .navbar-menu > .nav-item > .nav-link {
+        display: block;
+        padding: 0 20px;
+        color: black;
+    }
+}
+.section-container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+/* SECTION CONTAINER */
+.section-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* WELCOME AREA */
+
+.welcome-area {
+	height: auto;
+}
+
+/* 가운데 정렬*/
+.welcome-area > .container {
+	position: relative;
+	height: 100%;
+}
+
+.welcome-area > .container > .image-slide {
+	height: 100%;
+}
+
+.welcome-area > .container > .image-prev,
+.welcome-area > .container > .image-next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+    /* 닿으면 hover 값 천천히 */
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+.welcome-area > .container > .image-next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+/* hover 값*/
+.welcome-area > .container > .image-prev:hover,
+.welcome-area > .container > .image-next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.welcome-area > .container > .dots {
+	position: absolute;
+	width: 100%;
+	bottom: 10px;
+	text-align: center;
+}
+
+.welcome-area > .container > .dots > .dot {
+	cursor: pointer;
+	height: 4px;
+	width: 30px;
+	margin: 0 2px;
+	background-color: #717171;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+/* 마우스 가까이 닿을 시 hover , active 실제 눌렀을시 */
+.welcome-area > .container > .dots > .dot.active,
+.welcome-area > .container > .dots > .dot:hover {
+	background-color: #ddd;
+}
+
+/* 사진 깜빡이는 현상 */
+.welcome-area > .container > .fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
