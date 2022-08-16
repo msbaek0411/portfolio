@@ -1,41 +1,72 @@
-window.onload = function(){
-  const elm = document.querySelectorAll('.section');
-  const elmCount = elm.length;
-  elm.forEach(function(item, index){
-    item.addEventListener('mousewheel', function(event){
-      event.preventDefault();
-      let delta = 0;
+$(document).ready(function () {
+  slider();
+})
 
-      if (!event) event = window.event;
-      if (event.wheelDelta) {
-          delta = event.wheelDelta / 120;
-          if (window.opera) delta = -delta;
-      } 
-      else if (event.detail)
-          delta = -event.detail / 3;
+function slider(){
+  $(".slider").each(function(index){
+      var $this = $(this);
+      var winW = window.innerWidth; //화면 가로사이즈
+      var swiper = undefined;
+      var viewNum = ''; //슬라이드 개수 (옵션)
+      var loopChk = ''; //무한반복 체크
+      var slideNum =  $this.find('.swiper-slide').length //슬라이드 총 개수
+      var slideInx = 0; //현재 슬라이드 index
+      
+      //디바이스 체크
+      var winWChk = '';
+      $(window).on('load resize', function (){
+          winW = window.innerWidth;
+          if(winWChk != 'mo' && winW <= 768){ //모바일 버전으로 전환할 때
+              sliderAct();
+              winWChk = 'mo';
+          }
 
-      let moveTop = window.scrollY;
-      let elmSelector = elm[index];
+          if(winWChk != 'pc' && winW >= 769){ //PC 버전으로 전환할 때
+              sliderAct();
+              winWChk = 'pc';
+          }
+      })
+      
+      function sliderAct(){
+          //슬라이드 인덱스 클래스 추가
+          $this.addClass("slider-" + index);
 
-      // wheel down : move to next section
-      if (delta < 0){
-        if (elmSelector !== elmCount-1){
-          try{
-            moveTop = window.pageYOffset + elmSelector.nextElementSibling.getBoundingClientRect().top;
-          }catch(e){}
-        }
+          //슬라이드 초기화 
+          if (swiper != undefined){ 
+              swiper.destroy();
+              swiper = undefined;
+          }
+
+          //slidesPerView 옵션 설정
+          if (winW > 768){ //PC 버전
+              viewNum = 5;
+          }else{ //mobile 버전
+              viewNum = 2;
+          }
+          
+          //loop 옵션 체크
+          if (slideNum > viewNum){
+              loopChk = true;
+          }else{ 
+              loopChk = false;
+          }
+
+          swiper = new Swiper('.slider-' + index + ' .inner', {
+              slidesPerView: viewNum,
+              initialSlide :slideInx,
+              spaceBetween: 10,
+              slidesPerGroup: 1,
+              loop: loopChk,
+              navigation: {
+                  nextEl: $('.slider-' + index).find('.swiper-button-next'),
+                  prevEl: $('.slider-' + index).find('.swiper-button-prev'),
+              },
+              on: {
+                  activeIndexChange: function () {
+                      slideInx = this.realIndex; //현재 슬라이드 index 갱신
+                  }
+              },
+          });
       }
-      // wheel up : move to previous section
-      else{
-        if (elmSelector !== 0){
-          try{
-            moveTop = window.pageYOffset + elmSelector.previousElementSibling.getBoundingClientRect().top;
-          }catch(e){}
-        }
-      }
-
-      const body = document.querySelector('html');
-      window.scrollTo({top:moveTop, left:0, behavior:'smooth'});
-    });
   });
 }

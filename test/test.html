@@ -1,17 +1,61 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>슬라이드</title>
   <link rel="stylesheet" href="test.css">
+
 </head>
 <body>
-  <div class="section" style="font-size: 32px; text-align: center; background-color: white;">1</div>
-  <div class="section" style="font-size: 32px; text-align: center; background-color: skyblue;">2</div>
-  <div class="section" style="font-size: 32px; text-align: center; background-color: pink;">33<br>4</div>
-  <div class="section" style="font-size: 32px; text-align: center; background-color: palegoldenrod;">4</div>
-  <div class="section" style="font-size: 32px; text-align: center; background-color: violet;">5</div>
+  <div class="slider">
+    <div class="inner">
+        <ul class="swiper-wrapper slide_list">
+            <li class="swiper-slide">slider1</li>
+            <li class="swiper-slide">slider2</li>
+            <li class="swiper-slide">slider3</li>
+            <li class="swiper-slide">slider4</li>
+            <li class="swiper-slide">slider5</li>
+            <li class="swiper-slide">slider6</li>
+        </ul>
+    </div>
+    <div class="swiper-button-prev">이전</div>
+    <div class="swiper-button-next">다음</div>
+</div>
+
+<!-- 두번째 슬라이드 -->
+<div class="slider">
+    <div class="inner">
+        <ul class="swiper-wrapper slide_list">
+            <li class="swiper-slide">slider1</li>
+            <li class="swiper-slide">slider2</li>
+        </ul>
+    </div>
+    <div class="swiper-button-prev">이전</div>
+    <div class="swiper-button-next">다음</div>
+</div>
+
+
+<!-- 세번째 슬라이드 -->
+<div class="slider">
+    <div class="inner">
+        <ul class="swiper-wrapper slide_list">
+            <li class="swiper-slide">slider1</li>
+            <li class="swiper-slide">slider2</li>
+            <li class="swiper-slide">slider3</li>
+            <li class="swiper-slide">slider4</li>
+        </ul>
+    </div>
+    <div class="swiper-button-prev">이전</div>
+    <div class="swiper-button-next">다음</div>
+</div>
+  
   <script src="test.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
 </body>
 </html>
