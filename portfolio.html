@@ -1,5 +1,5 @@
 <!DOCTYPE HTML >
-<html lang="ko" style="background-image: url('img/background.jpg')">
+<html lang="ko" style="background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,6 +23,7 @@
 </head>
 <body>
 
+<!-- Header -->
 	<header class="header-area navbar-fade" id="header" style="display: none;">
 		<nav class="navbar">
 			<a class="navbar-brand" id="navbarBrand">Minseok</a>
@@ -36,35 +37,30 @@
 		</nav>
 	</header>
 
-	<div id="section1">
-		<div class="content_wrapper">
-			<div class="text_box">
-				<span class="text"></span><span class="blink">|</span>
+<!-- MainPage -->
+<div class="section-container">
+		<section class="wrapper">
+			<div class="content_wrapper">
+				<div class="text_box">
+					<span class="text"></span><span class="blink">|</span>
+				</div>
 			</div>
-		</div>
-		<div class="content_wrapper2">
-			<div>
-				<button class="btn_about" id="btn_about">
-					About Me
-				</button>
+			<div class="content_wrapper2">
+				<div>
+					<div class="container" id="btn_about">
+						<a data-animation="ripple">Click <span style="font-weight: bold;">Me</span></a>
+					</div>
+				</div>
 			</div>
-		</div>
-	</div>
-	
+		</section>
 
-
-	<div class="section-container">
-		<div class="welcome-area">
-			<div class="container">
-				
-			</div>
-		</div>
-
-		<section class="about-area" id="about">
+<!-- About Contents -->
+	<div class="test3209">
+		<section class="AboutContents" id="about">
 			<div class="title">
 				ABOUT ME
 			</div>
-			<div class="picture">
+			<div class="aboutImage">
 				<img src="img/profile.jpg">
 			</div>
 			<div class="textA">
@@ -74,9 +70,9 @@
 					국방부 사지방 si 사업을 상주한 경력이 있으며, 상주인원이 1명인 만큼 책임감과 해결방안 능력이 타고납니다.
 					궁금하신 점이 있으시다면 언제든지 편하게 연락주세요.
 				</div>
-				
-				
 			</div>
+
+<!-- AboutMe -->	
 			<div class="AboutMe">
 				<div class="AboutMeInfo">
 					<div class="AboutMeWrapper">
@@ -133,16 +129,24 @@
 					</div>
 				</div>
 			</div>
-			<div class="QWER">
-                <ul class="AboutMeQWER">
-                    <li class="AboutMeQWERLi">
-                        <div class="AboutMeQWERContainer">
-                            <div class="AboutMeQWERitem">
+	</div>
+			<!-- AboutTmi-->
+			<div class="Tmi">
+				
+                <ul class="AboutMeTmi">
+					<div class="title">
+						Information
+					</div>
+                    <li class="AboutMeTmiLi">
+
+                        <div class="AboutMeTmiContainer">
+                            <div class="AboutMeTmiitem">
                                 <p class="MainTitle">✔skills</p>
 									<div class="skills">
 										<div class="skillsContents">
 											<img src="./img/skills/html.png" alt="HtmlImage">
 											<p class="content">HTML</p>
+											<p></p>
 										</div>
 										<div class="skillsContents">
 											<img src="./img/skills/css.png" alt="CssImage">
@@ -166,9 +170,9 @@
 
                         </div>
                     </li>
-					<li class="AboutMeQWERLi">
-                        <div class="AboutMeQWERContainer">
-                            <div class="AboutMeQWERitem">
+					<li class="AboutMeTmiLi">
+                        <div class="AboutMeTmiContainer">
+                            <div class="AboutMeTmiitem">
                                 <p class="MainTitle">✔Certificate</p>
 									<div class="skills" style="width: 100%;">
 										<div class="certificateContents">
@@ -193,17 +197,17 @@
 
                         </div>
                     </li>
-                    <li class="AboutMeQWERLi">
-                        <div class="AboutMeQWERContainer">
-                            <div class="AboutMeQWERitem">
+                    <li class="AboutMeTmiLi">
+                        <div class="AboutMeTmiContainer">
+                            <div class="AboutMeTmiitem">
                                 <p class="MainTitle">✔Company</p>
                                 <p class="contents">Qotech 회사를 다니면서 기본적인 네트워크, 서버를 배워 왔습니다. 사지방 SI사업을 진행 하고나서 DB와 개발을 추가적으로 공부해왔습니다. </p>
                             </div>
                         </div>
                     </li>
-                    <li class="AboutMeQWERLi">
-                        <div class="AboutMeQWERContainer">
-                            <div class="AboutMeQWERitem">
+                    <li class="AboutMeTmiLi">
+                        <div class="AboutMeTmiContainer">
+                            <div class="AboutMeTmiitem">
                                 <p class="MainTitle">✔Future</p>
                                 <p class="contents">리액트 및 뷰를 통한 프로잭트를 진행 할 예정입니다. "코딩 애플" 인강을 통해 공부를 진행 해왔습니다. </p>
                             </div>
@@ -216,16 +220,12 @@
 		</section>
 
 
-		<section class="services-area" id="Projects">
+		<section class="ProjectContainer" id="Projects">
 			<div class="title">
 				PROJECTS
 			</div>
 			<div class="container">
-				
-
 				<div class="item">
-
-					<div class="icon"><span><i class="fab fa-js-square"></i></span></div>
 					<div class="service">국방부 NMS 유지보수</div>
 					<div class="serviceDate">2021.8 ~ 2022.3</div>
 					<div class="swiper-container swiper1">
@@ -242,15 +242,14 @@
 
 					<div class="content"><strong>국방부 사이버지식정보방 관제 및 관리 프로그램 유지보수를 진행했습니다.</strong> 엔지니어인 저한테 개발자로 변경될수 있도록 해준 특별한 프로젝트 입니다.</div>
 					<hr>
-					<div class="serviceContents"><div class="serviceContentsMain">✔ 작업 내용</div><div class="serviceContentsSub"> NMS 프론트 엔드 수정, NMS 백엔드 수정, 실시간 데이터 수정, DB 수정</div></div>
-					<div class="serviceContents"><div class="serviceContentsMain">✔ 주요 기능</div><div class="serviceContentsSub"> NMS 상황판, 고객지원센터(CRM), 유해사이트, 사지방 DB PC 관리</div></div>
+					<div class="ProjectContents"><div class="ProjectContentsMain">✔ 작업 내용</div><div class="ProjectContentsSub"> NMS 프론트 엔드 수정, NMS 백엔드 수정, 실시간 데이터 수정, DB 수정</div></div>
+					<div class="ProjectContents"><div class="ProjectContentsMain">✔ 주요 기능</div><div class="ProjectContentsSub"> NMS 상황판, 고객지원센터(CRM), 유해사이트, 사지방 DB PC 관리</div></div>
 					
-					<div class="serviceContents"><div class="serviceContentsMain">✔ 사용 언어</div><div class="serviceContentsSub"> php, jquery, MariaDB, Heidisql</div></div>
+					<div class="ProjectContents"><div class="ProjectContentsMain">✔ 사용 언어</div><div class="ProjectContentsSub"> php, jquery, MariaDB, Heidisql</div></div>
 					<div class="serviceContents"><div class="serviceContentsMain">✔ DATABASE</div><div class="serviceContentsSub"> MariaDB, MSSQL</div></div>
 				</div>
 
 				<div class="item">
-					<div class="icon"><span><i class="fab fa-java"></i></span></div>
 					<div class="service">동아출판 웹사이트 퍼블리싱 </div>
 					<div class="serviceDate">2022.5 ~ 2022.8</div>
 					<div class="swiper-container swiper2">

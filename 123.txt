@@ -35,7 +35,7 @@ skills  >>
 220805	// 이미지 슬라이드 수정 , 문구 수정 , ABOUT ME 내 내용 추가 , CAREER 제작
 
 
-2208-13	// about 클릭 이미지 수정
+2208-13	// about 클릭 이미지 수정 o
 		// navbar 상단 위치 시 숨김 처리 
 		// project 세션 애니메이션 추가
 		// çareer 수정 
