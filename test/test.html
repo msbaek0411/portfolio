@@ -6,56 +6,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>슬라이드</title>
   <link rel="stylesheet" href="test.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
 </head>
 <body>
-  <div class="slider">
-    <div class="inner">
-        <ul class="swiper-wrapper slide_list">
-            <li class="swiper-slide">slider1</li>
-            <li class="swiper-slide">slider2</li>
-            <li class="swiper-slide">slider3</li>
-            <li class="swiper-slide">slider4</li>
-            <li class="swiper-slide">slider5</li>
-            <li class="swiper-slide">slider6</li>
-        </ul>
-    </div>
-    <div class="swiper-button-prev">이전</div>
-    <div class="swiper-button-next">다음</div>
-</div>
 
-<!-- 두번째 슬라이드 -->
-<div class="slider">
-    <div class="inner">
-        <ul class="swiper-wrapper slide_list">
-            <li class="swiper-slide">slider1</li>
-            <li class="swiper-slide">slider2</li>
-        </ul>
+    <div class="swiper-container swiper1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://ktsmemo.cafe24.com/p/0475.jpg"></div>
+            <div class="swiper-slide"><img src="http://ktsmemo.cdn3.cafe24.com/p/0603.jpg"></div>
+            <div class="swiper-slide"><img src="http://oldmidi.cdn3.cafe24.com/p/0696.jpg"></div>
+            <div class="swiper-slide"><img src="http://ktsmemo.cdn3.cafe24.com/p/0177.jpg"></div>
+            <div class="swiper-slide"><img src="http://ktsmemo.cdn3.cafe24.com/p/0181.jpg"></div>
+        </div>
+    
+        <!-- 네비게이션 버튼 -->
+        <div class="swiper-button-next"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+        <div class="swiper-button-prev"></div><!-- 이전 버튼 -->
+    
+        <!-- 페이징 -->
+        <div class="swiper-pagination"></div>
     </div>
-    <div class="swiper-button-prev">이전</div>
-    <div class="swiper-button-next">다음</div>
-</div>
+
+    <div class="swiper-container swiper2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://ktsmemo.cafe24.com/p/0475.jpg"></div>
+            <div class="swiper-slide"><img src="http://ktsmemo.cdn3.cafe24.com/p/0603.jpg"></div>
+            <div class="swiper-slide"><img src="http://oldmidi.cdn3.cafe24.com/p/0696.jpg"></div>
+            <div class="swiper-slide"><img src="http://ktsmemo.cdn3.cafe24.com/p/0177.jpg"></div>
+            <div class="swiper-slide"><img src="http://ktsmemo.cdn3.cafe24.com/p/0181.jpg"></div>
+        </div>
+    
+        <!-- 네비게이션 버튼 -->
+        <div class="swiper-button-next"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+        <div class="swiper-button-prev"></div><!-- 이전 버튼 -->
+    
+        <!-- 페이징 -->
+        <div class="swiper-pagination"></div>
+    </div>
 
 
-<!-- 세번째 슬라이드 -->
-<div class="slider">
-    <div class="inner">
-        <ul class="swiper-wrapper slide_list">
-            <li class="swiper-slide">slider1</li>
-            <li class="swiper-slide">slider2</li>
-            <li class="swiper-slide">slider3</li>
-            <li class="swiper-slide">slider4</li>
-        </ul>
-    </div>
-    <div class="swiper-button-prev">이전</div>
-    <div class="swiper-button-next">다음</div>
-</div>
-  
-  <script src="test.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-  <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
+    <script src="test.js"></script>
 </body>
 </html>

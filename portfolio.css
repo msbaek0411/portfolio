@@ -569,6 +569,9 @@ section {
   .AboutMeQWERContainer > .AboutMeQWERitem > .MainTitle {
       padding: 10px 0;
       display: inline-block;
+      font-size: 32px;
+      font-weight: bold;
+      padding: 10px 0;
   }
   .AboutMeQWERitem > .skills {
     display: -webkit-flex;
@@ -762,94 +765,24 @@ section {
 	font-size: 16px;
 	padding: 10px 0;
 }
+/* 3209  */
 
-.NMSslider {
-    width: 600px;
-    text-align: center;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  
-  .NMSslides {
-    display: flex;
-    overflow-x: auto;
-    /* overflow: hidden; */
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-  }
-  .NMSslides::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-  }
-  .NMSslides::-webkit-scrollbar-thumb {
-    background: black;
-    border-radius: 10px;
-  }
-  .NMSslides::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  .NMSslides > div {
-    scroll-snap-align: start;
-    flex-shrink: 0;
-    width: 600px;
-    height: 300px;
-    margin-right: 50px;
-    border-radius: 10px;
-    overflow: hidden;
-    background: #eee;
-    transform-origin: center center;
-    transform: scale(1);
-    transition: transform 0.5s;
-    position: relative;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 100px;
-  }
-  
-  .author-info {
-    background: rgba(0, 0, 0, 0.75);
-    color: white;
-    padding: 0.75rem;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    margin: 0;
-  }
-  .author-info a {
-    color: white;
-  }
-  .NMSslides > div > img {
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .NMSslider > a {
-    display: inline-flex;
-    width: 1.5rem;
-    height: 1.5rem;
-    background: #eee;
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    margin: 0 0 0.5rem 0;
-    position: relative;
-  }
-  .NMSslider > a:active {
-    top: 1px;
-  }
-  .NMSslider > a:focus {
-    background: #000;
-  }
+.swiper-container {
+  width:640px;
+  height:420px;
+  border:5px solid silver;
+  border-radius:7px;
+  box-shadow:0 0 20px #ccc inset;
+}
+.swiper-slide {
+  text-align:center;
+  display:flex; /* 내용을 중앙정렬 하기위해 flex 사용 */
+  align-items:center; /* 위아래 기준 중앙정렬 */
+  justify-content:center; /* 좌우 기준 중앙정렬 */
+}
+.swiper-slide img {
+box-shadow:0 0 5px #555;
+}
 
 ul.imgs{
     padding: 0;

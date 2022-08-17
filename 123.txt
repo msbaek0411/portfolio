@@ -39,3 +39,11 @@ skills  >>
 		// navbar 상단 위치 시 숨김 처리 
 		// project 세션 애니메이션 추가
 		// çareer 수정 
+
+
+
+이면지
+							<li><img src="./img/qotech/dashboard1.jpg"></li>
+							<li><img src="./img/qotech/dashboard2.jpg"></li>
+							<li><img src="./img/qotech/login.jpg"></li>
+							<li><img src="./img/qotech/crm.jpg"></li>

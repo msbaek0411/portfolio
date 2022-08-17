@@ -1,7 +1,16 @@
-.slider {overflow: hidden;position: relative;max-width: 1180px;margin: 50px auto 0;}
-.slider .inner {overflow: hidden;margin: 0 50px;}
-.slide_list > li {width: 20%;height: 150px;background: #ade9ff;font-size: 20px;line-height: 150px;text-align: center;}
-.slider .swiper-button-prev,
-.slider .swiper-button-next {position: absolute;top: 50%;width: 35px;height: 35px;background:url('https://i.ibb.co/jHRD6th/pngwing-com.png') center center no-repeat;background-size: cover;text-indent: -999em;}
-.slider .swiper-button-prev {left: 0;transform: rotateY(180deg) translate(0,-50%);}
-.slider .swiper-button-next {right:0;transform: translate(0,-50%);}
+.swiper-container {
+    width:640px;
+    height:420px;
+    border:5px solid silver;
+    border-radius:7px;
+    box-shadow:0 0 20px #ccc inset;
+}
+.swiper-slide {
+    text-align:center;
+    display:flex; /* 내용을 중앙정렬 하기위해 flex 사용 */
+    align-items:center; /* 위아래 기준 중앙정렬 */
+    justify-content:center; /* 좌우 기준 중앙정렬 */
+}
+.swiper-slide img {
+	box-shadow:0 0 5px #555;
+}
