@@ -1,0 +1,3 @@
+					<div class="btn_about" id="btn_about">
+						About Me
+					</div>
