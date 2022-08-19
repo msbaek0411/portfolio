@@ -1,45 +1,81 @@
-body {
-    background: #36353c;
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+
+
+.demo::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 80%;
+  background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+  background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+}
+
+
+#scrollArrow { background: url(https://picsum.photos/1200/800?image=1037) center center / cover no-repeat;}
+
+.demo a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+.demo a:hover {
+  opacity: .5;
+}
+
+#scrollArrow a {
+  padding-top: 70px;
+}
+#scrollArrow a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb05 1.5s infinite;
+  animation: sdb05 1.5s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
   }
-  
-  .container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 50px;
-    width: 200px;
-    margin: auto;
+  50% {
+    opacity: 1;
   }
-  *[data-animation="ripple"] {
-    height: 100%;
-    width: 100%;
-    display: block;
-    outline: none;
-    padding: 20px;
-    color: #fff;
-    text-transform: uppercase;
-    background: linear-gradient(135deg, #e570e7 0%,#79f1fc 100%);
-    box-sizing: border-box;
-    text-align: center;
-    line-height: 14px;
-    font-family: roboto, helvetica;
-    font-weight: 200;
-    letter-spacing: 1px;
-    text-decoration: none;
-    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    /*border-radius: 50px;*/
-    -webkit-tap-highlight-color: transparent;
-    border-radius: 5px;
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
   }
-  
-  *[data-animation="ripple"]:focus {
-    outline: none;
+}
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
   }
-  
-  *[data-animation="ripple"]::selection {
-    background: transparent;
-    pointer-events: none;
+  50% {
+    opacity: 1;
   }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+
