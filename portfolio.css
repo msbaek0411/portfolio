@@ -46,6 +46,12 @@ ul {
 .padding-top14 {
   padding-top: 14px;
 }
+
+.text_point {
+   color: brown;
+}
+
+
 /* Header */
 .header-area {
     position: relative;
@@ -345,6 +351,7 @@ font-family: ui-serif;
   justify-content: space-between;
   -webkit-box-pack: justify;
   clear: both;
+  padding-top: 31px;
 }
 
 .AboutMe > .AboutMeInfo {
@@ -480,11 +487,9 @@ font-size: 1rem;
       padding: 10px 0;
   }
   .AboutMeTmiContainer > .AboutMeTmiitem > .MainTitle {
-      padding: 10px 0;
       display: inline-block;
       font-size: 32px;
       font-weight: bold;
-      padding: 10px 0;
   }
   .AboutMeTmiitem > .skills {
     display: -webkit-flex;
@@ -496,16 +501,20 @@ font-size: 1rem;
   }
   .AboutMeTmiitem > .skills > .skillsContents {
     max-width: 14rem;
-    margin: 49px;
+    text-align: center;
     opacity: .8;
 
+  }
+
+  .AboutMeTmiitem > .skills > .skillsContents > .SkillsImg {
+    width: 50%;
+    height: 100%;
   }
 .Itemcontent {
   text-align: center;
 }
   .AboutMeTmiitem > .skills > .certificateContents {
     max-width: 14rem;
-    margin: 49px;
     opacity: .8;
     text-align: center;
   }
@@ -515,11 +524,11 @@ font-size: 1rem;
   }
 
 .certificateContents > img {
-  max-width:100%;
+  max-width: 39%;
   height:auto;
 }
 .skillsContents > img {
-  max-width:100%;
+  max-width: 50%;
   height:auto;
 }
 
