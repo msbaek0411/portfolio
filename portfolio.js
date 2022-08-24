@@ -94,7 +94,9 @@ document.getElementById('navbarProjects').addEventListener('click', moveTo.bind(
 document.getElementById('navbarCareer').addEventListener('click', moveTo.bind(null,'Career'));
 document.getElementById('btn_about').addEventListener('click', moveTo.bind(null,'about'));
 document.getElementById('scrollArrowAboutMe').addEventListener('click', moveTo.bind(null,'Information'));
-
+document.getElementById('scrollArrowInformation').addEventListener('click', moveTo.bind(null,'Projects'));
+document.getElementById('scrollArrowProjects').addEventListener('click', moveTo.bind(null,'Career'));
+document.getElementById('scrollArrowCareer').addEventListener('click', moveTo.bind(null,'brand'));
 /* swiper(slide) */
 
 new Swiper('.swiper1', {

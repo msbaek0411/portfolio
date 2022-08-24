@@ -1,7 +1,0 @@
-					<div class="content">동아출판 관련 웹사이트 퍼블리싱 작업을 진행했습니다. 퇴사 이후 진행한 첫 퍼블리싱 작업이며, 전 회사 개발 팀장님 추천으로 알바식으로 진행 했습니다. 
-						작업 내용은 동아출판 웹사이트 퍼블리싱 수정 및 제작이였으며, 담당 디자이너 시안을 재플린으로 보내 주시면 테스트 서버 웹사이트에 적용 및 확인 후 실서버로 적용하는 방식으로 진행 했습니다. 전 회사 개발 팀장님 추천 사항으로 열심히 진행 했으며, 1인 체제인 만큼 책임감을 갖고 일을 진행 했습니다. 그 결과 html과 css, javascript 등 기본 프론트 엔드 개발에 어떤 방향성으로 일이 되는지 알게됐습니다.</div>
-					<hr>
-					<div class="serviceContents"><div class="serviceContentsMain">✔ 작업 내용</div><div class="serviceContentsSub"> NMS 프론트 엔드 수정, NMS 백엔드 수정, 실시간 데이터 수정, DB 수정</div></div>
-					<div class="serviceContents"><div class="serviceContentsMain">✔ 주요 기능</div><div class="serviceContentsSub"> NMS 상황판, 고객지원센터(CRM), 유해사이트, 사지방 DB PC 관리</div></div>
-					<div class="serviceContents"><div class="serviceContentsMain">✔ 사용 언어</div><div class="serviceContentsSub"> php, jquery, MariaDB, Heidisql</div></div>
-					<div class="serviceContents"><div class="serviceContentsMain">✔ DATABASE</div><div class="serviceContentsSub"> MariaDB, MSSQL</div></div>
