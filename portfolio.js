@@ -1,6 +1,6 @@
 // section
 
-const content = "Hi. I'm minseok, \n front-end developer.";
+const content = "Hi. I'm minseok, \n developer.";
 const text = document.querySelector(".text");
 let i = 0;
 
